@@ -10,7 +10,7 @@ Automated acceptance tests for the [HackerNews API](https://github.com/HackerNew
 
 ## 🚀 Setup
 ```bash
-git clone https://github.com/<your-username>/hackernews-api.git
-cd hackernews-api-test
+git clone https://github.com/sanyokone/hackernews-api-test.git
+cd hackernews-api
 npm install
 npm test
