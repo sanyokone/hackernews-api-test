@@ -18,7 +18,7 @@ describe('Hacker News API - Top Story Comment', () => {
         const { data } = await apiClient.get(`/item/${topStoryId}.json`)
         topStory = data;
 
-        if (topStory.kids || topStory.kids.length === 0) {
+        if (!topStory.kids || topStory.kids.length === 0) {
             console.warn(`Story ${topStoryId} has no comments — skipping all tests.`);
         }
 
